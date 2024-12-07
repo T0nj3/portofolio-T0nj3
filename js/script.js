@@ -2,15 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const splashScreen = document.getElementById('splash-screen');
   const mainContent = document.getElementById('main-content');
   const countdownElement = document.getElementById('countdown');
-  const hamburgerMenu = document.getElementById('hamburger-menu');
-  const navMenu = document.getElementById('nav-menu');
   const themeToggle = document.getElementById('theme-toggle');
   const logo = document.getElementById('logo');
-  const header = document.querySelector('header');
   const body = document.body;
   let countdown = 3;
 
-  
   const countdownInterval = setInterval(() => {
     countdown -= 1;
     countdownElement.textContent = countdown;
@@ -22,12 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 1000);
 
-
-  hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
-
- 
   themeToggle.addEventListener('click', () => {
     const currentTheme = body.dataset.theme;
     if (currentTheme === 'light') {
@@ -40,24 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
       themeToggle.textContent = '☀';
     }
   });
-
- 
-  let isThrottling = false;
-
-  const handleScroll = () => {
-    if (!isThrottling) {
-      isThrottling = true;
-
-      setTimeout(() => {
-        if (window.scrollY > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-        isThrottling = false;
-      }, 200); 
-    }
-  };
-
-  window.addEventListener('scroll', handleScroll);
 });
