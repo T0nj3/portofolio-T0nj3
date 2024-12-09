@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Tonje Albertin Kristiansen</title>
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="https://kit.fontawesome.com/c208c464c3.js" crossorigin="anonymous"></script>
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">
+      <img id="logo" src="../assets/darklogo3.png" alt="Tonje's Logo">
+    </div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle-desktop" class="theme-toggle-desktop">☾</button>
+    <button id="hamburger-menu" class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="mobile-nav" id="mobile-nav">
+      <button id="close-menu" class="close-menu">✕</button>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle-mobile" class="theme-toggle-mobile">☾</button>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out! I'd love to hear from you.</p>
+    <div class="contact-details">
+      <div class="detail">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:tkristianseen@gmail.com">tkristianseen@gmail.com</a>
+      </div>
+      <div class="detail">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Oslo, Norway</p>
+      </div>
+      <div class="detail">
+        <i class="fa-solid fa-phone"></i>
+        <p>+47 123 45 678 (optional placeholder)</p>
+      </div>
+    </div>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>

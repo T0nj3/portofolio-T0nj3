@@ -57,6 +57,11 @@ header.sticky-header {
     color: var(--highlight-color);
 }
 
+.desktop-nav a.active,
+.mobile-nav a.active {
+    color: var(--highlight-color);
+}
+
 .theme-toggle-desktop {
     font-size: 1.5rem;
     background: none;
