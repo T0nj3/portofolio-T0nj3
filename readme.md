@@ -39,24 +39,20 @@ Live Demo
 Visit the portfolio website here:
 https://portofolio-tk.netlify.app/html/projects
 
-Projects
+### Projects
 
-1. Cross-Course Project
+1. **Cross-Course Project**
+   - **Description:** A project exploring responsive design using HTML and CSS.
+   - **GitHub Repo:** [RainyDays Repo](https://github.com/T0nj3/RainyDays-html-css)
+   - **Live Demo:** [RainyDays Live](https://rainydays-t0nj3.netlify.app/)
 
-	•	Description: A project exploring responsive design using HTML and CSS.
-	•	GitHub Repo: Link to Cross-Course Repo
-	•	Live Demo: https://portofolio-tk.netlify.app/html/projects
+2. **Semester Project 1**
+   - **Description:** A more complex website with dynamic elements.
+   - **GitHub Repo:** [Semester Project Repo](https://github.com/T0nj3/Semester-Project)
+   - **Live Demo:** [Semester Project Live](https://semesterproject-tk.netlify.app/)
 
-
-    2. Semester Project 1
-
-	•	Description: A more complex website with dynamic elements.
-	•	GitHub Repo: Link to Semester Project Repo
-	•	Live Demo: View Live
-
-    3. Project Exam 1
-
-	•	Description: An end-to-end front-end project showcasing my skills.
-	•	GitHub Repo: Link to Project Exam Repo
-	•	Live Demo: View Live
+3. **Project Exam 1**
+   - **Description:** An end-to-end front-end project showcasing my skills.
+   - **GitHub Repo:** [Project Exam Repo](https://github.com/T0nj3/project-exam-T0nj3-1)
+   - **Live Demo:** [Project Exam Live](https://project-exam-t0nj3-1.netlify.app/)
 
