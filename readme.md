@@ -37,7 +37,7 @@ Technologies
 Live Demo
 
 Visit the portfolio website here:
-https://portofolio-tk.netlify.app/html/projects
+https://app.netlify.com/sites/portofolio-tk/overview
 
 ### Projects
 
