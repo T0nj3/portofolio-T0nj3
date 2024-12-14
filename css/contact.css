@@ -57,7 +57,8 @@ header.sticky-header {
     color: var(--highlight-color);
 }
 
-.desktop-nav a.active {
+.desktop-nav a.active,
+.mobile-nav a.active {
     color: var(--highlight-color);
 }
 

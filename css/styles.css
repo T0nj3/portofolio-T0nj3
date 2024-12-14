@@ -221,7 +221,7 @@ body {
   background: none;
   border: 2px solid var(--text-color);
   color: var(--text-color);
-  font-size: 1.8rem; /* Juster font-size hvis nødvendig */
+  font-size: 1.8rem; 
   cursor: pointer;
   border-radius: 50%;
   margin-top: 2rem;
@@ -230,7 +230,7 @@ body {
 }
 
 .theme-toggle-mobile i {
-  font-size: 2rem; /* Sørger for at ikonet har riktig størrelse */
+  font-size: 2rem; 
   transition: transform 0.6s ease, color 0.4s ease;
 }
 
