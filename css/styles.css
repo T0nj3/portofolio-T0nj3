@@ -213,26 +213,24 @@ body {
 
 .theme-toggle-mobile {
   position: relative;
-  display: inline-block;
-  background: none;
-  border: 2px solid var(--text-color);
-  color: var(--text-color);
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  font-size: 1.8rem; /* Juster font-size hvis nødvendig */
+  cursor: pointer;
+  border-radius: 50%;
   margin-top: 2rem;
   isolation: isolate;
-  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .theme-toggle-mobile i {
-  display: block;
-  font-size: 1.8rem;
+  font-size: 2rem; /* Sørger for at ikonet har riktig størrelse */
   transition: transform 0.6s ease, color 0.4s ease;
 }
 
