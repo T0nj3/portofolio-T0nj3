@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const splashScreen = document.getElementById('splash-screen');
-  const mainContent = document.getElementById('main-content');
-  const countdownElement = document.getElementById('countdown');
   const hamburgerMenu = document.getElementById('hamburger-menu');
   const mobileNav = document.querySelector('.mobile-nav');
   const closeMenuButton = document.getElementById('close-menu');
@@ -9,26 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggleMobile = document.getElementById('theme-toggle-mobile');
   const logo = document.getElementById('logo');
   const body = document.body;
-
-  if (countdownElement) {
-    let countdown = 3;
-    countdownElement.textContent = countdown;
-
-    const countdownInterval = setInterval(() => {
-      countdown -= 1;
-      countdownElement.textContent = countdown;
-      if (countdown === 0) {
-        clearInterval(countdownInterval);
-        splashScreen.style.opacity = '0';
-        setTimeout(() => {
-          splashScreen.style.display = 'none';
-          mainContent.style.display = 'block';
-        }, 500);
-      }
-    }, 1000);
-  }
-
-  
 
   const updateThemeUI = (theme) => {
     body.dataset.theme = theme;

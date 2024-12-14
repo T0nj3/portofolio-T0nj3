@@ -1,73 +1,100 @@
 
-  
-  body {
-    margin: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  #splash-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background:  #0f0f0f;
-    color: var(--text-color);
-    overflow: hidden;
-  }
-  
-  #splash-screen h1 {
-    font-size: 3rem;
-    animation: fade-in 2s ease-in-out;
-  }
-  
-  #splash-screen p {
-    font-size: 1.5rem;
-    animation: fade-in 3s ease-in-out;
-  }
-  
-  #countdown {
-    font-size: 6rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    animation: scale-bounce 1s infinite ease-in-out;
-  }
-  
-  .splash-animation {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    animation: pulse 2s infinite ease-in-out;
-  }
-  
-  .splash-animation:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
-  .splash-animation:nth-child(2) { top: 40%; left: 80%; animation-delay: 0.5s; }
-  .splash-animation:nth-child(3) { top: 70%; left: 50%; animation-delay: 1s; }
-  
- 
-  #reveal-effect {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background-color);
-    z-index: 1000;
-    display: none;
-  }
-  
-  @keyframes scale-bounce {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(0.8); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(0.8); opacity: 0.5; }
-  }
+:root {
+  --background-color: #0f0f0f;
+  --text-color: #ffffff;
+  --splash-bg-color: #0f0f0f;
+  --splash-text-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --splash-bg-color: #ffffff;
+  --splash-text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #0f0f0f;
+  --text-color: #ffffff;
+  --splash-bg-color: #0f0f0f;
+  --splash-text-color: #ffffff;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+#splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: var(--splash-bg-color);
+  color: var(--splash-text-color);
+  overflow: hidden;
+}
+
+#splash-screen h1 {
+  font-size: 3rem;
+  animation: fade-in 2s ease-in-out;
+}
+
+#splash-screen p {
+  font-size: 1.5rem;
+  animation: fade-in 3s ease-in-out;
+}
+
+#countdown {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  animation: scale-bounce 1s infinite ease-in-out;
+}
+
+.splash-animation {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--splash-text-color);
+  border-radius: 50%;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.splash-animation:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.splash-animation:nth-child(2) { top: 40%; left: 80%; animation-delay: 0.5s; }
+.splash-animation:nth-child(3) { top: 70%; left: 50%; animation-delay: 1s; }
+
+#reveal-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  z-index: 1000;
+  display: none;
+}
+
+
+@keyframes scale-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
