@@ -1,11 +1,11 @@
 
 ![Light Logo](assets/lightlogo.png)
 
-Portfolio Website
+# Portfolio Website
 
 This portfolio showcases my development projects as a front-end development student. The website includes three featured projects, presented in a modern, responsive design.
 
-Table of Contents
+## Table of Contents
 
 	•	About
 	•	Features
@@ -16,25 +16,25 @@ Table of Contents
 	•	Projects
 	•	Contact
 
-About
+## About
 
 This portfolio was developed to demonstrate my skills in front-end development and showcase my work as a student. The website is designed with a professional yet creative look and feel to cater to potential employers, clients, or collaborators.
 
-Features
+## Features
 
 	•	Modern Design: Clean, responsive layout optimized for various screen sizes.
 	•	Interactive Header: Navigation with a dark mode toggle for user experience.
 	•	Project Highlights: Each project card includes links to the GitHub repo and live demo.
 	•	Responsive Design: Ensures usability across desktops, tablets, and mobile devices.
 
-Technologies
+## Technologies
 
 	•	HTML
 	•	CSS (including Flexbox and Grid)
 	•	JavaScript
 	•	Netlify for hosting
 
-Live Demo
+## Live Demo
 
 Visit the portfolio website here:
 https://portofolio-tk.netlify.app/
