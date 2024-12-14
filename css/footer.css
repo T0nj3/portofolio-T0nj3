@@ -1,0 +1,76 @@
+:root {
+    --background-color: #0f0f0f;
+    --text-color: #eaeaea;
+    --card-color: #1b1b1b;
+    --button-color: #ff6f61;
+    --highlight-color: #ffd700;
+    --border-color: #2e2e2e;
+    --link-color: #4ecdc4;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  [data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #1a1a1a;
+    --card-color: #f4f4f4;
+    --button-color: #ff8364;
+    --highlight-color: #ffc107;
+    --border-color: #dcdcdc;
+    --link-color: #1e88e5;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 -4px 10px var(--shadow-color);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links li {
+    list-style: none;
+  }
+  
+  .social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--highlight-color);
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .contact-info a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: var(--highlight-color);
+  }
+  
+  .copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
