@@ -217,21 +217,28 @@ body {
   background: none;
   border: 2px solid var(--text-color);
   color: var(--text-color);
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   border-radius: 50%;
-  padding: 0.6rem 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   isolation: isolate;
-  transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
-.theme-toggle-mobile:hover {
-  transform: scale(1.2) rotate(360deg);
-  background-color: var(--highlight-color);
-  border-color: var(--highlight-color);
-  color: var(--background-color);
-  box-shadow: 0 0 15px var(--highlight-color), 0 0 30px var(--highlight-color);
+.theme-toggle-mobile i {
+  display: block;
+  font-size: 1.8rem;
+  transition: transform 0.6s ease, color 0.4s ease;
+}
+
+.theme-toggle-mobile.active i {
+  transform: scale(1.5) rotate(360deg);
+  color: var(--highlight-color);
 }
 
 .theme-toggle-mobile::before {
@@ -249,7 +256,7 @@ body {
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-.theme-toggle-mobile:hover::before {
+.theme-toggle-mobile.active::before {
   width: 200%;
   height: 200%;
   transform: translate(-50%, -50%) scale(1);
@@ -261,11 +268,15 @@ body {
   color: var(--text-color);
 }
 
-[data-theme="light"] .theme-toggle-mobile:hover {
+[data-theme="light"] .theme-toggle-mobile.active {
   background-color: rgba(240, 240, 240, 0.9);
-  color: var(--text-color);
   border-color: rgba(240, 240, 240, 0.6);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .theme-toggle-mobile.active {
+  background-color: var(--highlight-color);
+  box-shadow: 0 0 15px var(--highlight-color), 0 0 30px var(--highlight-color);
 }
 
 @media screen and (max-width: 868px) {
