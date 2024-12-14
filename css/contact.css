@@ -171,10 +171,11 @@ header.sticky-header {
 }
 
 .contact-container {
-    padding: 5rem;
+    padding: 2rem 1rem;
     text-align: center;
     background-color: var(--background-color);
     color: var(--text-color);
+    box-sizing: border-box;
 }
 
 .contact-container h1 {
@@ -209,26 +210,28 @@ header.sticky-header {
 }
 
 .contact-details .detail a {
-    color: var(--text-color); 
-    text-decoration: none; 
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .contact-details .detail a:hover {
-    color: var(--highlight-color); 
+    color: var(--highlight-color);
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
     background-color: var(--header-color);
-    padding: 2rem;
+    padding: 2rem 2.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .contact-form .form-group {
     margin-bottom: 1.5rem;
     text-align: left;
+    margin-right: 2%;
 }
 
 .contact-form .form-group label {
@@ -275,12 +278,21 @@ header.sticky-header {
 }
 
 @media screen and (max-width: 768px) {
-    .contact-form {
-        padding: 1.5rem;
+    .contact-container {
+        padding: 1.5rem 1rem;
+        align-content: center;
+        justify-content: center;
     }
 
-    .contact-details .detail {
-        font-size: 1rem;
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 1rem;
+        margin-right: 10%;
     }
 
     .contact-form button.btn-submit {
